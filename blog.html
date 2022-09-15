@@ -14,12 +14,50 @@
             <div class="accordion-item background-color">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Accordion Item #1
+                    Difference between localstorage and sessionstorage
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <h1 style="font-style:italic; color:tomato">Local Storage</h1>
+                    <strong>Local Storage:</strong> This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).
+                    <br>
+                    <ol>
+                        <h3>Local storage has 4 methods:</h3>
+                        <li>
+                           <strong>setItem() Method  –</strong> This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.
+                        </li>
+                        <li>
+                           <strong>getItem() Method  –</strong> This method takes one parameter that is key which is used to get the value stored with a particular key name.
+                        </li>
+                        <li>
+                           <strong>removeItem() Method –</strong> This is method is used to remove the value stored in the memory in reference to key.
+                        </li>
+                        <li>
+                           <strong>clear() Method –</strong>  This method is used to clear all the values stored in localstorage.
+                        </li>
+                    </ol>
+                    <hr style="color:gray;"><hr>
+                    <h1 style="font-style:italic; color:tomato">Session Storage</h1>
+                    <strong>Session Storage:</strong> objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.
+
+                    A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser is open; they do not persist after the page reloads and restores. A new session is created each time a tab or window is opened; this is different from session cookies. Each tab/window that is opened with the same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage from the original tab is copied to the duplicated tab. Closing a window/tab ends the session and clears sessionStorage objects.
+                    <br>
+                    <ol>
+                        <h3>Session Storage has 4 methods:</h3>
+                        <li>
+                           <strong>setItem() Method  –</strong> This method takes two parameters one is key and another one is value. It is used to store the value in a particular location with the name of the key.
+                        </li>
+                        <li>
+                           <strong>getItem() Method  –</strong> This method takes one parameter that is key which is used to get the value stored with a particular key name.
+                        </li>
+                        <li>
+                           <strong>removeItem() Method –</strong> This is method is used to remove the value stored in the memory in reference to key.
+                        </li>
+                        <li>
+                           <strong>clear() Method –</strong>  This method is used to clear all the values stored in localstorage.
+                        </li>
+                    </ol>
                 </div>
               </div>
             </div>
