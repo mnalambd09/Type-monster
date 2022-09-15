@@ -14,7 +14,7 @@
             <div class="accordion-item background-color">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Difference between localstorage and sessionstorage
+                    <h3>Difference between localstorage and sessionstorage</h3>
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -64,12 +64,34 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Accordion Item #2
+                    <h3>Difference between global scope and local scope.</h3>
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <h1 style="font-style:italic; color:tomato">Local Scop</h1>
+                  <strong>Local Scop</strong> is defined as a type of variable declared within programming block or subroutines. It can only be used inside the subroutine or code block in which it is declared. The local variable exists until the block of the function is under execution. After that, it will be destroyed automatically.
+                  <ol>
+                    <h3>Local Scop:</h3>
+                    <li>It is declared inside a function.</li>
+                    <li>If it is not initialized, a garbage value is stored</li>
+                    <li>It is created when the function starts execution and lost when the functions terminate.</li>
+                    <li>Data sharing is not possible as data of the local variable can be accessed by only one function.</li>
+                    <li>Parameters passing is required for local variables to access the value in other function.</li>
+                    <li>It is stored on the stack unless specified.</li>
+                  </ol>
+                  <hr><hr>
+                  <h1 style="font-style:italic; color:tomato">Global Scop</h1>
+                  <strong>Global Scop</strong> in the program is a variable defined outside the subroutine or function. It has a global scope means it holds its value throughout the lifetime of the program. Hence, it can be accessed throughout the program by any function defined within the program, unless it is shadowed.
+                  <ol>
+                    <h3>Global Scop:</h3>
+                    <li>It is declared outside the function.</li>
+                    <li>If it is not initialized zero is stored as default.</li>
+                    <li>It is created before the program’s global execution starts and lost when the program terminates.</li>
+                    <li>Data sharing is possible as multiple functions can access the same global variable.</li>
+                    <li>Parameters passing is not necessary for a global variable as it is visible throughout the program</li>
+                    <li>It is stored on a fixed location decided by the compiler.</li>
+                  </ol>
                 </div>
               </div>
             </div>
